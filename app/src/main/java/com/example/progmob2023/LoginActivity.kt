@@ -21,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
 
         sharedPref = getSharedPreferences(prefs_name, Context.MODE_PRIVATE)
 
-//      Baca session jika pernah login maka langsung ke getAPIActivity
         var tmpEmail = sharedPref.getString("email", null)
         var tmpPassword = sharedPref.getString("password", null)
 
